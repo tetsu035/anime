@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>AnimeAfrique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><span>A</span><span>n</span><span>i</span><span>m</span><span>e</span>Arique</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#contentSection">Manga</a></li>
+                <li><a href="#Sheach">Sheach</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#">Acount</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="diapragme">
+        <div class="images">
+            <img src="/img/Capture d'écran 2024-06-08 134132.png" alt="image1">
+            <img src="/img/Capture d'écran 2024-06-08 134157.png" alt="image2">
+            <img src="/img/Capture d'écran 2024-06-08 134220.png" alt="image3">
+            <img src="/img/Capture d'écran 2024-06-08 134313.png" alt="image4">
+            <img src="/img/Capture d'écran 2024-06-08 134341.png" alt="image5">
+        </div>
+    </div>
+
+    <div class="cher" id="Sheach">
+        <select class="your" onchange="filterByCategory(this.value)">
+            <option value="all">All</option>
+            <option value="shonen">Shonen</option>
+            <option value="isekai">Isekai</option>
+            <option value="sports">Sports</option>
+            <option value="cd">Card Game</option>
+        </select>
+        <input type="search" id="searchInput" placeholder="Search..." oninput="filterContent()">
+    </div>
+
+    <h2>Akuwaba</h2>
+    <section class="section" id="contentSection">
+        <div class="content" data-title="Naruto" data-category="Shonen">
+            <h3>Naruto</h3>
+            <div class="category">Category: Shonen</div>
+            <img src="/img/Capture d'écran 2024-06-08 134313.png" alt="Naruto">
+            <div class="avis">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-shopping-cart add-to-cart"></i>
+            </div>
+        </div>
+        <div class="content" data-title="One Piece" data-category="Shonen">
+            <h3>One Piece</h3>
+            <div class="category">Category: Shonen</div>
+            <img src="/img/Capture d'écran 2024-06-08 134132.png" alt="One Piece">
+            <div class="avis">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-shopping-cart add-to-cart"></i>
+            </div>
+        </div>
+        <div class="content" data-title="DBZ" data-category="Shonen">
+            <h3>DBZ</h3>
+            <div class="category">Category: Shonen</div>
+            <img src="/img/Capture d'écran 2024-06-08 134341.png" alt="DBZ">
+            <div class="avis">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-shopping-cart add-to-cart"></i>
+            </div>
+        </div>
+        <div class="content" data-title="Jujutsu Kaisen" data-category="Shonen">
+            <h3>Jujutsu Kaisen</h3>
+            <div class="category">Category: Shonen</div>
+            <img src="/img/Capture d'écran 2024-06-09 161040.png" alt="Jujutsu Kaisen">
+            <div class="avis">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-shopping-cart add-to-cart"></i>
+            </div>
+        </div>
+        <div class="content" data-title="My Hero Academia" data-category="Shonen">
+            <h3>My Hero Academia</h3>
+            <div class="category">Category: Shonen</div>
+            <img src="/img/Capture d'écran 2024-06-08 134220.png" alt="My Hero Academia">
+            <div class="avis">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-shopping-cart add-to-cart"></i>
+            </div>
+        </div>
+        <div class="content" data-title="Blue Lock" data-category="Sports">
+            <h3>Blue Lock</h3>
+            <div class="category">Category: Sports</div>
+            <img src="/img/Capture d'écran 2024-06-08 134157.png" alt="Blue Lock">
+            <div class="avis">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-shopping-cart add-to-cart"></i>
+            </div>
+        </div>
+        <div class="content" data-title="Hibaki" data-category="isekai">
+            <h3>Hibaki</h3>
+            <div class="category">Category: Shonen</div>
+            <img src="/img/Capture d'écran 2024-06-09 161131.png" alt="Hibaki">
+            <div class="avis">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-shopping-cart add-to-cart"></i>
+            </div>
+        </div>
+        <div class="content" data-title="Yu-Gi-Oh!" data-category="cd">
+            <h3>Yu-Gi-Oh!</h3>
+            <div class="category">Category: Card Game</div>
+            <img src="/img/Capture d'écran 2024-06-09 161006.png" alt="Yu-Gi-Oh!">
+            <div class="avis">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-shopping-cart add-to-cart"></i>
+            </div>
+        </div>
+        <div class="content" data-title="One Punch Man" data-category="Shonen">
+            <h3>One Punch Man</h3>
+            <div class="category">Category: Shonen</div>
+            <img src="/img/Capture d'écran 2024-06-09 161225.png" alt="One Punch Man">
+            <div class="avis">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-shopping-cart add-to-cart"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer id="Contact">
+        <h2>Contact Us</h2>
+        <form action="">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p>&copy; 2024 AnimeAfrique. Tous droits réservés.</p>
+        <label for="r">NOS INFOS</label><br><p class="r">+225 0709414548 && thominydje@gmail.com</p>
+    </footer>
+     <!-- Bouton de retour en haut -->
+     <button id="scrollTopBtn" onclick="scrollToTop()">&#8679;</button>
+
+    <script>
+        function filterByCategory(category) {
+            const contents = document.querySelectorAll('.content');
+
+            contents.forEach(content => {
+                const contentCategory = content.getAttribute('data-category').toLowerCase();
+                if (category === 'all' || contentCategory === category) {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
+            });
+        }
+
+        function filterContent() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const contents = document.querySelectorAll('.content');
+
+            contents.forEach(content => {
+                const title = content.getAttribute('data-title').toLowerCase();
+                if (title.includes(searchInput)) {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
+            });
+        }
+
+        // Fonction pour faire défiler jusqu'en haut de la page
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Afficher ou masquer le bouton en fonction du défilement
+        window.addEventListener('scroll', function() {
+            const scrollTopBtn = document.getElementById('scrollTopBtn');
+            if (window.scrollY > 300) {
+                scrollTopBtn.style.display = 'block';
+            } else {
+                scrollTopBtn.style.display = 'none';
+            }
+        });
+
+        let currentIndex = 0;
+        const imagesContainer = document.querySelector('.diapragme .images');
+        const images = document.querySelectorAll('.diapragme .images img');
+        const totalImages = images.length;
+
+        function showNextImage() {
+            currentIndex = (currentIndex + 1) % totalImages;
+            const offset = -currentIndex * 100;
+            imagesContainer.style.transform = `translateX(${offset}%)`;
+        }
+
+        setInterval(showNextImage, 3000);
+    </script>
+</body>
+</html>
